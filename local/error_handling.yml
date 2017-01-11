@@ -1,0 +1,25 @@
+---
+# error_handling.yml
+- name: error handling
+  hosts: localhost
+  vars:
+    good_night_sleep: 8
+  tasks:
+    - name: Execute a bad command
+      command: 'false'
+      ignore_errors: true
+    - name: Take a nap
+      wait_for:
+        timeout: '{{ good_night_sleep }}'
+      register: nap_results
+      changed_when: 'good_night_sleep > 0'
+      notify:
+        - Make my bed
+    - name: Show how well I napped
+      debug:
+        msg: '{{ nap_results }}'
+      failed_when: 'nap_results.elapsed < 8'
+  handlers:
+    - name: Make my bed
+      debug:
+        msg: "Cleaning up is fun!"

@@ -1,0 +1,2 @@
+# A darn simple Ansible inventory
+localhost ansible_connection=local ansible_user=elliotweiser

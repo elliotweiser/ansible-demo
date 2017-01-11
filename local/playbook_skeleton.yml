@@ -1,0 +1,21 @@
+---
+# playbook_skeleton.yml
+- name: Playbook skeleton
+  hosts: host-or-group
+  vars:
+    ...
+
+  pre_tasks:
+    - ...
+
+  roles:
+    - ...
+
+  tasks:
+    - ...
+
+  post_tasks:
+    - ...
+
+  handlers:
+    - ...
