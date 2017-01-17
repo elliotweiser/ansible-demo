@@ -3,3 +3,4 @@
 /.molecule
 /.vagrant
 *.pyc
+/roles
