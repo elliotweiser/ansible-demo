@@ -2,6 +2,8 @@
 
 Ansible examples for the purpose of giving demos.
 
+Contributors must agree to the CLA.
+
 * 1/18/2017 - [MacAdmins Meeting][macadmins-20170118] - [Slides][slides-20170118] - [Video Archive][archive-20170118]
 
 [archive-20170118]: https://stream.lib.utah.edu/index.php?c=details&id=12817
